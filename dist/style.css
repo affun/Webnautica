@@ -3,6 +3,8 @@
   --dark: #2d2d2d;
   --trans-1: all 0.1s linear;
   --trans-2: all 0.1s linear;
+  --ff-1: "Cormorant Garamond", serif;
+  --ff-2: "Bungee Shade", cursive;
 }
 
 * {
@@ -23,6 +25,14 @@ body {
 
 .border-dark {
   border-color: var(--dark);
+}
+
+.ff-1 {
+  font-family: var(--ff-1);
+}
+
+.ff-2 {
+  font-family: var(--ff-2);
 }
 
 .nav-items {
