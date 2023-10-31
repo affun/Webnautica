@@ -1,0 +1,22 @@
+.nav-items {
+  height: 100%;
+  border-width: 0 0 0 2px;
+  border-color: var(--dark);
+  padding: 0 48px;
+  transition: var(--trans-1);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--dark);
+    color: var(--light);
+  }
+
+  a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+  }
+}

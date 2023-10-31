@@ -1,0 +1,43 @@
+:root {
+  --light: #e2ddd5;
+  --dark: #2d2d2d;
+  --trans-1: all 0.1s linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light);
+  background-image: url("../asset/nnnoise.svg");
+  min-height: 100vh;
+  color: var(--dark);
+}
+
+.border-dark {
+  border-color: var(--dark);
+}
+
+.nav-items {
+  height: 100%;
+  border-width: 0 0 0 2px;
+  border-color: var(--dark);
+  padding: 0 48px;
+  transition: var(--trans-1);
+  cursor: pointer;
+}
+.nav-items:hover {
+  background-color: var(--dark);
+  color: var(--light);
+}
+.nav-items a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */
