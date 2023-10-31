@@ -4,9 +4,12 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: var(--light);
-  background-image: url("../asset/nnnoise.svg");
+body{
   min-height: 100vh;
   color: var(--dark);
+}
+
+.grainy {
+  background-color: var(--light);
+  background-image: url("../asset/nnnoise.svg");
 }

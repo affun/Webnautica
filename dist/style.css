@@ -11,10 +11,13 @@
 }
 
 body {
-  background-color: var(--light);
-  background-image: url("../asset/nnnoise.svg");
   min-height: 100vh;
   color: var(--dark);
+}
+
+.grainy {
+  background-color: var(--light);
+  background-image: url("../asset/nnnoise.svg");
 }
 
 .border-dark {
