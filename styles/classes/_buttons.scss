@@ -1,0 +1,30 @@
+.btn-1 {
+  background: #f9bf3a;
+  border: 1px solid var(--dark);
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  z-index: 4;
+  transition: var(--trans-2);
+
+  &:hover {
+    bottom: 10px;
+    right: 20px;
+  }
+
+  &:active {
+    bottom: 5px;
+    right: 10px;
+  }
+}
+
+.bord {
+  content: "";
+  position: relative;
+  width: 200px;
+  height: 40px;
+  border: 1px solid var(--dark);
+  z-index: 2;
+}
