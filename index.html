@@ -15,7 +15,10 @@
 </head>
 
 <body class="relative grainy overflow-x-hidden">
-  <nav class="sticky top-0 flex justify-between items-center border-b-2 border-dark h-16 grainy">
+
+  <div id="trailer"></div>
+
+  <nav class="absolute w-screen top-0 flex justify-between items-center border-b-2 border-dark h-16 grainy z-10">
     <div class="">logo</div>
     <ul class="h-full flex items-center uppercase">
       <li class="nav-items"><a href="">home</a></li>
@@ -24,36 +27,39 @@
     </ul>
   </nav>
 
-  <header class="h-[calc(100vh-64px)] w-screen flex flex-col justify-start items-center">
-    <div class="w-11/12 flex flex-col items-center">
+  <header class="h-screen w-screen flex flex-col justify-start items-center">
+    <div class="w-10/12 flex flex-col items-center">
       <!-- title -->
-      <h1 class="ff-2 uppercase lg:text-9xl text-8xl text-center mt-48">RETRO CAR SHOW</h1>
-      <div class="flex items-start w-full mt-20">
-        <!-- <div class="relative">
-          <button class="btn-1 uppercase font-semibold ">
-            button
-          </button>
-          <div class="bord md:text-8xl"></div>
-        </div> -->
+      <h1 class="ff-2 uppercase lg:text-9xl text-8xl text-center mt-48 cursor-default">RETRO CAR SHOW</h1>
+      <div class="flex items-start w-full mt-32">
 
-        <div class=" h-40 w-full">
-
-        </div>
-        <div class=" w-full flex items-center justify-center">
-          <div class="bg-gray-100 w-10/12 flex flex-col items-center justify-center h-80">
-            img goes here
-            <img
-              src="https://www.creativefabrica.com/wp-content/uploads/2021/04/05/Photo-Image-Icon-Graphics-10388619-1-580x386.jpg"
-              alt="" class="w-32">
+        <div class=" w-full">
+          <p class="text-xl font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, tempora
+            pariatur, neque recusandae ab suscipit vero assumenda minus incidunt quisquam nam beatae repellat asperiores
+            commodi consequuntur ut deserunt harum reiciendis!</p>
+          <div class="relative btn-1-container mt-20">
+            <button class="btn-1 uppercase font-semibold text-xl">
+              button
+            </button>
+            <div class="bord"></div>
           </div>
         </div>
+
+        <div class=" w-full flex items-center justify-center">
+          <div class="bg-gray-100 w-10/12 flex flex-col items-center justify-center h-80">
+            <img src="https://img.freepik.com/premium-photo/1970-chevelle-generative-ai_96461-866.jpg" alt=""
+              class="w-full grayscale scale-x--1">
+          </div>
+        </div>
+
       </div>
     </div>
 
   </header>
 
   <section class="h-screen"></section>
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/trailer.js"></script>
 </body>
 
 </html>
