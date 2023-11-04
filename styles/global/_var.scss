@@ -1,9 +1,13 @@
 :root {
   --light: #e2ddd5;
   --dark: #2d2d2d;
+  // --light: #2d2d2d;
+  // --dark: #e2ddd5;
+
   --trans-1: all 0.1s linear;
   --trans-2: all 0.1s linear;
-  
+  --trans-3: all 0.3s ease-in-out;
+
   --ff-1: "Cormorant Garamond", serif;
   --ff-2: "Bungee Shade", cursive;
 }

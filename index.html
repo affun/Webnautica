@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="dist/style.css">
+  <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -18,54 +18,123 @@
 
   <div id="trailer"></div>
 
-  <nav class="absolute w-screen top-0 flex justify-between items-center border-b-2 border-dark h-16 grainy z-10">
-    <div class="">logo</div>
+  <nav class="sticky w-screen top-0 flex justify-between items-center border-b-2 border-dark h-16 grainy z-10">
+    <div class="ff-2 text-5xl ml-16">R.C.S</div>
     <ul class="h-full flex items-center uppercase">
-      <li class="nav-items"><a href="">home</a></li>
-      <li class="nav-items"><a href="">timeline</a></li>
+      <li class="nav-items"><a href="#home">home</a></li>
+      <li class="nav-items"><a href="">get started</a></li>
       <li class="nav-items"><a href="">contacts</a></li>
     </ul>
   </nav>
 
-  <div class="w-screen flex flex-col justify-start items-center">
-    <header class="h-screen w-screen flex flex-col justify-start items-center">
-      <div class="w-10/12 flex flex-col items-center">
-        <!-- title -->
-        <h1 class="ff-2 uppercase lg:text-9xl text-8xl text-center mt-48 cursor-default">RETRO CAR SHOW</h1>
-        <div class="flex items-start w-full mt-32">
-  
-          <div class=" w-full">
-            <p class="text-2xl font-medium ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, tempora
-              pariatur, neque recusandae ab suscipit vero assumenda minus incidunt quisquam nam beatae repellat asperiores
-              commodi consequuntur ut deserunt harum reiciendis!</p>
-            <div class="relative btn-1-container mt-20">
-              <button class="btn-1 uppercase font-semibold text-xl">
-                button
-              </button>
-              <div class="bord"></div>
-            </div>
+  <header id="home" class="pb-40 w-screen flex flex-col justify-start items-center">
+    <div class="w-10/12 flex flex-col items-center">
+      <!-- title -->
+      <h1 class="ff-2 uppercase lg:text-9xl text-8xl text-center lg:mt-40 mt-20 cursor-default">RETRO CAR SHOW</h1>
+      <div class="flex flex-col lg:flex-row lg:gap-0 gap-10 items-start w-full lg:mt-32 mt-10">
+
+        <div class="w-full items-center">
+          <p class="text-2xl font-medium lg:text-left text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Optio, tempora
+            pariatur, neque recusandae ab suscipit vero assumenda minus incidunt quisquam nam beatae repellat asperiores
+            commodi consequuntur ut deserunt harum reiciendis!</p>
+          <div class="relative btn-1-container lg:mt-20 mt-10 mx-auto">
+            <button class="btn-1 uppercase font-semibold text-xl">
+              get started
+            </button>
+            <div class="bord"></div>
           </div>
-  
-          <div class=" w-full flex items-center justify-center">
-            <div class=" w-10/12 flex flex-col items-center justify-center">
-              <!-- <img src="https://i.pinimg.com/564x/6a/49/6b/6a496bb21e872e1e7a0ae32b598cc5e2.jpg" alt="" -->
-              <!-- <img src="https://i.pinimg.com/564x/92/f3/9e/92f39e2ff838ab55ad8869fe1685050a.jpg" alt="" -->
-              <!-- <img src="https://i.pinimg.com/564x/a7/19/5f/a7195fdad65b77f4199f836565cd85ed.jpg" alt="" -->
-              <img
-                src="https://media.discordapp.net/attachments/1168458904599011379/1169672001120641214/Worlds_Fastest_Cars_of_the_1960s_1.jpeg?ex=655640f0&is=6543cbf0&hm=b57714b12c762fbad8ecee7da1dbd036c17d059780cf0f3736e1a43bd18916db&=&width=1739&height=905"
-                alt="" class="hero-img w-full grayscale">
-              <!-- <a href="https://imgur.com/GDRZWZe"><img src="https://i.imgur.com/GDRZWZe.jpg" title="source: imgur.com" /></a> -->
-            </div>
+        </div>
+
+        <div class=" w-full flex items-center justify-center">
+          <div class=" w-10/12 flex flex-col items-center justify-center">
+            <!-- <img src="https://i.pinimg.com/564x/6a/49/6b/6a496bb21e872e1e7a0ae32b598cc5e2.jpg" alt="" -->
+            <!-- <img src="https://i.pinimg.com/564x/92/f3/9e/92f39e2ff838ab55ad8869fe1685050a.jpg" alt="" -->
+            <!-- <img src="https://i.pinimg.com/564x/a7/19/5f/a7195fdad65b77f4199f836565cd85ed.jpg" alt="" -->
+            <img
+              src="https://media.discordapp.net/attachments/1168458904599011379/1169672001120641214/Worlds_Fastest_Cars_of_the_1960s_1.jpeg?ex=655640f0&is=6543cbf0&hm=b57714b12c762fbad8ecee7da1dbd036c17d059780cf0f3736e1a43bd18916db&=&width=1739&height=905"
+              alt="" class="hero-img w-full grayscale">
+            <!-- <a href="https://imgur.com/GDRZWZe"><img src="https://i.imgur.com/GDRZWZe.jpg" title="source: imgur.com" /></a> -->
           </div>
-  
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- h-fvh -->
+  <section class=" border-t-2 border-dark w-screen flex justify-center py-16">
+    <div class="w-10/12 h-full flex lg:flex-row flex-col items-center justify-start gap-12">
+      <div class="w-full h-full flex items-center">
+        <img class="w-full grayscale grayscale-none"
+          src="https://media.discordapp.net/attachments/890108114597212160/1170399815268565093/jpg-medium.jpg?ex=6558e6c4&is=654671c4&hm=b9d071adacecd7f06316a60ab69735f254e5992c7e597e89fed31eeaf718b58f&=&width=1440&height=905"
+          alt="">
+      </div>
+      <div class="flex flex-col justify-start h-full lg:w-5/12">
+        <h1 class="ff-2 uppercase text-5xl tracking-tighter">Aston martin Db5</h1>
+        <div class="hr-1 mt-6 mb-8 flex flex-col w-full">
+
+        </div>
+        <div class="para-1">
+          <p>
+            <strong>Aston Martin</strong> is a prestigious British luxury sports car manufacturer with a rich history
+            dating back to its founding in 1913 by Lionel Martin and Robert Bamford. It has earned its place in
+            automotive history by producing <strong>iconic models</strong>, including the legendary DB5, famously
+            associated with James Bond. Aston Martin's lineup features high-performance vehicles like the DB11, Vantage,
+            and the DBS Superleggera, known for their exhilarating power and handling.
+          </p>
+
+          <p>
+            Craftsmanship and luxury define Aston Martin's interiors, showcasing hand-stitched leather, fine woodwork,
+            and top-quality materials. With a strong presence in <strong>motorsport</strong>, including the prestigious
+            24 Hours of Le Mans, Aston Martin has a rich <strong>racing heritage</strong>. Known for limited production
+            and exclusivity, many of their models become sought-after collector's items. Despite ownership changes and
+            financial challenges, Aston Martin continues to epitomize elegance, luxury, and performance while embracing
+            innovation, such as incorporating hybrid powertrains to meet evolving environmental standards.
+          </p>
         </div>
       </div>
-  
-    </header>
-    <section class="section w-full h-sceen"></section>
-  </div>
+    </div>
+  </section>
+  <section class=" border-t-2 border-dark w-screen flex justify-center py-16">
+    <div class="w-10/12 h-full flex lg:flex-row-reverse flex-col items-center justify-start gap-12">
+      <div class="w-full h-full flex items-center">
+        <img class="w-full grayscale grayscale-none"
+          src="https://media.discordapp.net/attachments/890108114597212160/1170415985711390780/gettyimages-866092138-612x612_1.jpg?ex=6558f5d4&is=654680d4&hm=d3fd1c6220a3b2f137f0bb209e3da3adcad46f8e8fd961e2fce3b98316d9d43f&=&width=1358&height=905"
+          alt="">
+      </div>
+      <div class="flex flex-col justify-start h-full lg:w-5/12 lg:text-right lg:items-end">
+        <h1 class="ff-2 uppercase text-5xl tracking-tighter">The Porsche 911</h1>
+        <div class="hr-1 mt-6 mb-8 flex flex-col w-full">
 
-  <section class="h-screen"></section>
+        </div>
+        <div class="para-1">
+          <p><strong>Porsche 911</strong>, an iconic <strong>sports car</strong> by <strong>Porsche AG</strong> since
+            1963, is renowned for its timeless design, exceptional performance, and rich racing history. Its unique
+            <strong>rear-engine layout</strong> ensures balanced weight distribution and thrilling <strong>driving
+              experience</strong>. With various models like <strong>Carrera</strong>, <strong>Turbo</strong>, and
+            <strong>GT3</strong>, it offers a range of <strong>performance</strong> options.
+          </p>
+
+          <p>Boasting a rich <strong>racing heritage</strong>, the 911 excels in motorsport. It combines
+            <strong>comfort</strong> with advanced <strong>technology</strong>, continuously evolving while retaining
+            its iconic design. Some models offer <strong>all-wheel drive (AWD)</strong> for enhanced
+            <strong>traction</strong>. The Porsche 911 is a symbol of <strong>engineering excellence</strong> and
+            <strong>driving pleasure</strong>, maintaining its iconic status in the automotive world.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="sticky bottom-0 left-0 w-screen h-16 border-t-2 border-dark grainy z-10">
+    <ul class="h-full flex items-center uppercase">
+      <li class="foot-item"><a href="">facebook</a></li>
+      <li class="foot-item"><a href="">instagram</a></li>
+      <li class="foot-item"><a href="">contacts</a></li>
+    </ul>
+  </footer>
+
   <script src="js/main.js"></script>
   <script src="js/trailer.js"></script>
 </body>

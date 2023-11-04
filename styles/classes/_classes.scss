@@ -1,7 +1,30 @@
 .grayscale {
   filter: grayscale(100%);
+  transition: var(--trans-3);
+  &:hover {
+    filter: grayscale(0%);
+  }
 }
 
-.scale-x--1{
+.grayscale-none:hover {
+  filter: grayscale(0%) !important;
+}
+
+.scale-x--1 {
   transform: scaleX(-1);
 }
+
+.h-fvh {
+  height: calc(100vh - 128px);
+}
+
+.hr-1 {
+  height: 2px;
+  max-width: 60%;
+  background-color: var(--dark);
+}
+
+.para-1 p{
+  margin-bottom: 0.75rem;
+}
+
