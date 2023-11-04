@@ -33,6 +33,22 @@ body {
   background-image: url("../asset/nnnoise.svg");
 }
 
+::-webkit-scrollbar {
+  width: 24px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light);
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark);
+  border-radius: 100vw;
+  border: 6px var(--light) solid;
+}
+
 .border-dark {
   border-color: var(--dark);
 }
@@ -122,4 +138,10 @@ body {
 
 body:hover > #trailer {
   opacity: 1;
+}
+
+.hero-img {
+  aspect-ratio: 2;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
