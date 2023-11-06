@@ -11,18 +11,55 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
-  <title>Document</title>
+  <title>Retro Car Show</title>
 </head>
 
 <body class="relative grainy overflow-x-hidden">
 
   <div id="trailer"></div>
 
-  <nav class="sticky w-screen top-0 flex justify-between items-center border-b-2 border-dark h-16 grainy z-10">
-    <div class="ff-2 text-5xl ml-16">R.C.S</div>
-    <ul class="h-full flex items-center uppercase">
+  <div class="absolute inset-0 bg-dark-2 z-30 invisible" id="acknowledgement">
+    <div class="relative w-full h-full">
+      <div class="sticky top-0 w-screen h-screen flex items-center justify-center">
+        <div class="grainy w-10/12 max-w-4xl p-8 relative">
+          <button class="absolute aspect-square text-4xl top-0 right-2 flex items-center justify-center"
+            onclick="closeAcknowledgement()"><span>×</span></button>
+          <div class="border-2 border-dark p-6 flex flex-col items-center">
+            <h1 class="ff-2 uppercase text-5xl text-center mb-6">acknowledgement</h1>
+            <hr class="hr-1 mb-6 w-2/3 h-1">
+            <p class="text-center px-8 mb-6">I want to express my sincere gratitude to my friend Aditya and me, Affan,
+              for
+              crafting this website. It's
+              been a labor of love, and our joint efforts have made this project a reality. We are deeply appreciative
+              of
+              the time and energy we've invested, and we eagerly anticipate the journey ahead. This website is a
+              testament
+              to our collaboration, and we are excited to share it with all of you. Thank you for your support and
+              encouragement.</p>
+            <hr class="hr-1 mb-6 w-1/6 h-1">
+
+            <div class="flex flex-col items-center">
+              <h2 class="font-semibold">For queries, please contact:</h2>
+              <ul>
+                <li>Aditya: <button class="hover:underline cursor-pointer"
+                    onclick="navigator.clipboard.writeText('srikar.aditya08@gmail.com')">srikar.aditya08@gmail.com</button>
+                </li>
+                <li>Affan: <button class="hover:underline cursor-pointer"
+                    onclick="navigator.clipboard.writeText('affangv8@gmail.com')">affangv8@gmail.com</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav
+    class="sticky w-screen top-0 flex lg:justify-between justify-center items-center border-b-2 border-dark h-16 grainy z-10">
+    <div class="ff-2 text-5xl ml-16"><a href="#home">R.C.S</a></div>
+    <ul class="h-full lg:flex hidden items-center uppercase ">
       <li class="nav-items"><a href="#home">home</a></li>
-      <li class="nav-items"><a href="">get started</a></li>
+      <li class="nav-items"><a href="#get-started">get started</a></li>
       <li class="nav-items"><a href="">contacts</a></li>
     </ul>
   </nav>
@@ -34,16 +71,18 @@
       <div class="flex flex-col lg:flex-row lg:gap-0 gap-10 items-start w-full lg:mt-32 mt-10">
 
         <div class="w-full items-center">
-          <p class="text-2xl font-medium lg:text-left text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Optio, tempora
-            pariatur, neque recusandae ab suscipit vero assumenda minus incidunt quisquam nam beatae repellat asperiores
-            commodi consequuntur ut deserunt harum reiciendis!</p>
-          <div class="relative btn-1-container lg:mt-20 mt-10 mx-auto">
+          <p class="text-2xl font-medium lg:text-right text-center">Welcome to our Retro Car Show, where vintage
+            automotive history comes to life. Explore a stunning collection of meticulously restored classic cars from
+            the 1950s, 60s, and beyond. From the elegant lines of mid-century classics to the raw power of muscle cars,
+            our event is a tribute to timeless automotive design. Engage with fellow enthusiasts, hear the stories
+            behind these machines, and relive the past. Join us for a day of nostalgia, elegance, and automotive
+            splendor. Don't miss this unique opportunity to immerse yourself in the golden era of automobiles.</p>
+          <a class="block relative btn-1-container lg:mt-20 mt-10 mx-auto" href="#get-started">
             <button class="btn-1 uppercase font-semibold text-xl">
               get started
             </button>
             <div class="bord"></div>
-          </div>
+          </a>
         </div>
 
         <div class=" w-full flex items-center justify-center">
@@ -63,7 +102,7 @@
 
   </header>
   <!-- h-fvh -->
-  <section class=" border-t-2 border-dark w-screen flex justify-center py-16">
+  <section class=" border-t-2 border-dark w-screen flex justify-center py-16" id="get-started">
     <div class="w-10/12 h-full flex lg:flex-row flex-col items-center justify-start gap-12">
       <div class="w-full h-full flex items-center">
         <img class="w-full grayscale grayscale-none"
@@ -127,13 +166,93 @@
     </div>
   </section>
 
-  <footer class="sticky bottom-0 left-0 w-screen h-16 border-t-2 border-dark grainy z-10">
+  <section class=" border-t-2 border-dark w-screen flex justify-center py-16">
+    <div class="w-10/12 h-full flex lg:flex-row flex-col items-center justify-start gap-12">
+      <div class="w-full h-full flex items-center">
+        <img class="w-full grayscale grayscale-none"
+          src="https://cdn.discordapp.com/attachments/890108114597212160/1170417772073844906/delorean.jpg?ex=6558f77e&is=6546827e&hm=5b65cf34dd0e1b7604124998ea1c35a9e2bdd08cdbc4497a8024e93a37893b4d&"
+          alt="">
+      </div>
+      <div class="flex flex-col justify-start h-full lg:w-5/12">
+        <h1 class="ff-2 uppercase text-5xl tracking-tighter">DeLorean</h1>
+        <div class="hr-1 mt-6 mb-8 flex flex-col w-full">
+
+        </div>
+        <div class="para-1">
+          <p>
+            <strong>The DeLorean</strong> is an iconic sports car that gained global recognition due to its prominent
+            role as a time machine in the "Back to the Future" film series. Produced by the <strong>DeLorean Motor
+              Company (DMC)</strong>, founded by John DeLorean in 1975, the most famous model is the <strong>DeLorean
+              DMC-12</strong>. Known for its ahead-of-its-time design, it features distinctive <strong>gull-wing
+              doors</strong>, a <strong>stainless steel body</strong>, and a <strong>rear-engine layout</strong>. The
+            brushed stainless steel construction gives it a unique and futuristic appearance. While not particularly
+            high-performing, the DMC-12's uniqueness and fame made it a sought-after collector's item.
+          </p>
+
+          <p>
+            The <strong>DeLorean DMC-12</strong> had a limited production run from 1981 to 1983, with only about
+            <strong>9,000 units</strong> manufactured. Its claim to fame came from its appearance as a <strong>time
+              machine</strong> in the "Back to the Future" trilogy, propelling it to pop culture stardom. Due to its
+            limited production and cinematic fame, the DMC-12 remains a popular collector's item and an iconic part of
+            automotive and cinematic history. In recent years, there has been a resurgence of interest in the DeLorean,
+            with some efforts to revive the brand and produce updated versions of the car.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" border-t-2 border-dark w-screen flex justify-center py-16">
+    <div class="w-10/12 h-full flex lg:flex-row-reverse flex-col items-center justify-start gap-12">
+      <div class="w-full h-full flex items-center">
+        <img class="w-full grayscale grayscale-none"
+          src="https://cdn.discordapp.com/attachments/890108114597212160/1170419403628761098/jaguar_e-type.jpg?ex=6558f903&is=65468403&hm=e8b846a51178ee381217f3e2389e75521ce3e372d1b13889015153a8a05f6b75&"
+          alt="">
+      </div>
+      <div class="flex flex-col justify-start h-full lg:w-5/12 lg:text-right lg:items-end">
+        <h1 class="ff-2 uppercase text-5xl tracking-tighter">Jaguar E-Type</h1>
+        <div class="hr-1 mt-6 mb-8 flex flex-col w-full">
+
+        </div>
+        <div class="para-1">
+          <p>
+            <strong>The Jaguar E-Type</strong>, known as the Jaguar XK-E, is a
+            legendary British sports car produced from
+            <strong>1961 to 1975</strong>. Its <strong>timeless design</strong> is
+            often hailed as one of the most <strong>beautiful cars</strong> ever
+            created, featuring a distinctive <strong>curved body</strong> and
+            <strong>iconic long bonnet</strong>. The E-Type offered impressive
+            <strong>performance</strong>, powered by inline-six and V12 engines,
+            delivering <strong>strong acceleration</strong> and precise handling.
+            Notably, it featured groundbreaking technology for its time, including
+            <strong>independent rear suspension</strong> and
+            <strong>four-wheel disc brakes</strong>.
+          </p>
+
+          <p>
+            Available as a <strong>coupe</strong> or <strong>convertible</strong>,
+            the E-Type left an enduring legacy as a symbol of the
+            <strong>1960s</strong> and influenced future sports car designs. It
+            remains highly <strong>collectible</strong>, with well-preserved
+            models commanding <strong>premium prices</strong>. Jaguar has even
+            produced "<strong>Continuation Models</strong> staying true to the
+            original specifications, allowing a new generation of enthusiasts to
+            experience this <strong>classic British sports car</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="sticky bottom-0 left-0 w-screen h-16 border-t-2 border-dark grainy z-10">
     <ul class="h-full flex items-center uppercase">
-      <li class="foot-item"><a href="">facebook</a></li>
-      <li class="foot-item"><a href="">instagram</a></li>
-      <li class="foot-item"><a href="">contacts</a></li>
+      <li class="foot-item"><a href="https://www.facebook.com">facebook</a></li>
+      <li class="foot-item"><a href="https://www.instagram.com">instagram</a></li>
+      <li class="foot-item"><a onclick="openAcknowledgement()">acknowledgement</a></li>
     </ul>
-  </footer>
+  </div>
 
   <script src="js/main.js"></script>
   <script src="js/trailer.js"></script>
